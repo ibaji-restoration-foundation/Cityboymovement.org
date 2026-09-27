@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us | City Boy Movement – Ibaji Branch</title>
+
+  <meta name="description" content="Learn about City Boy Movement – Ibaji Branch, Ibaji Local Government Area, Kogi State.">
+
+  <meta name="theme-color" content="#087f23">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f8f5;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #087f23, #005c1a);
+      color: white;
+      padding: 15px 5%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 12px;
+      color: #ffd700;
+      margin-top: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 13px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* WELCOME BAR */
+    .welcome-bar {
+      width: 100%;
+      overflow: hidden;
+      background: #ffd700;
+      color: #063d15;
+      padding: 11px 0;
+      white-space: nowrap;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .welcome-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: welcomeMove 18s linear infinite;
+      animation-delay: 2s;
+    }
+
+    @keyframes welcomeMove {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* HERO */
+    .hero {
+      background:
+        linear-gradient(
+          rgba(0,70,20,0.92),
+          rgba(0,70,20,0.92)
+        );
+      color: white;
+      text-align: center;
+      padding: 85px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 62px);
+      margin-bottom: 15px;
+    }
+
+    .gold-line {
+      width: 90px;
+      height: 4px;
+      background: #ffd700;
+      margin: 15px auto;
+      border-radius: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    /* MAIN */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 65px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #087f23;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: 0 auto 45px;
+      text-align: center;
+      color: #555;
+      font-size: 17px;
+    }
+
+    /* ABOUT BOX */
+    .about-box {
+      background: white;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+      border-left: 5px solid #087f23;
+    }
+
+    .about-box h2 {
+      color: #087f23;
+      margin-bottom: 15px;
+      font-size: 27px;
+    }
+
+    .about-box p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    /* THREE COLUMNS */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .info-card {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+      border-top: 5px solid #087f23;
+    }
+
+    .info-icon {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .info-card h3 {
+      color: #087f23;
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    /* GREEN SECTION */
+    .green-section {
+      background: linear-gradient(135deg, #087f23, #005c1a);
+      color: white;
+      padding: 50px 30px;
+      border-radius: 18px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .green-section h2 {
+      color: #ffd700;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .green-section p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 16px;
+    }
+
+    /* QUICK LINKS */
+    .quick-links {
+      text-align: center;
+      margin-top: 45px;
+    }
+
+    .quick-links h2 {
+      color: #087f23;
+      margin-bottom: 20px;
+    }
+
+    .quick-links a {
+      display: inline-block;
+      background: #087f23;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .quick-links a:hover {
+      background: #005c1a;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #063d15;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer h3 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      color: #ddd;
+      margin: 6px 0;
+    }
+
+    .footer-links {
+      margin: 20px 0;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 7px;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      color: #ffd700;
+    }
+
+    .copyright {
+      margin-top: 22px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    /* MOBILE */
+    @media (max-width: 850px) {
+
+      header {
+        position: relative;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 5px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 60px 20px;
+      }
+
+      .about-box {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+  <div class="nav-container">
+
+    <div class="logo">
+      CITY BOY MOVEMENT
+      <span>IBAJI BRANCH</span>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="activities.html">Activities</a>
+      <a href="news.html">News</a>
+      <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="membership.html">Membership</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- WELCOME -->
+<div class="welcome-bar">
+
+  <div class="welcome-text">
+    WELCOME TO CITY BOY MOVEMENT – IBAJI BRANCH. Please connect with us for updates, activities, programmes and information from the movement. — MANAGEMENT
+  </div>
+
+</div>
+
+
+<!-- HERO -->
+<section class="hero">
+
+  <h1>About Us</h1>
+
+  <div class="gold-line"></div>
+
+  <p>
+    City Boy Movement – Ibaji Branch
+  </p>
+
+</section>
+
+
+<!-- MAIN CONTENT -->
+<main class="container">
+
+  <h2 class="section-title">
+    About City Boy Movement
+  </h2>
+
+  <p class="intro">
+    City Boy Movement – Ibaji Branch is a local organizational
+    platform serving as a point of connection, communication,
+    coordination and community engagement within Ibaji Local
+    Government Area, Kogi State.
+  </p>
+
+
+  <!-- WHO WE ARE -->
+  <div class="about-box">
+
+    <h2>Who We Are</h2>
+
+    <p>
+      City Boy Movement – Ibaji Branch brings together people
+      who participate in the movement's officially announced
+      programmes, activities, meetings and community engagements.
+    </p>
+
+    <p>
+      The branch website provides a central place where visitors
+      can learn about the movement, view leadership information,
+      follow activities, read published news and find information
+      about upcoming programmes.
+    </p>
+
+  </div>
+
+
+  <!-- OUR PURPOSE -->
+  <div class="about-box">
+
+    <h2>Our Purpose</h2>
+
+    <p>
+      The purpose of the branch platform is to strengthen
+      communication, organization and participation among people
+      connected with the movement in Ibaji.
+    </p>
+
+    <p>
+      Through this platform, official information about meetings,
+      activities, programmes and community engagement can be
+      shared with members and interested visitors.
+    </p>
+
+  </div>
+
+
+  <!-- THREE CARDS -->
+  <div class="info-grid">
+
+    <div class="info-card">
+
+      <div class="info-icon">
+        🤝
+      </div>
+
+      <h3>
+        Community
+      </h3>
+
+      <p>
+        Supporting communication and participation around
+        community activities and engagements.
+      </p>
+
+    </div>
+
+
+    <div class="info-card">
+
+      <div class="info-icon">
+        👥
+      </div>
+
+      <h3>
+        Organization
+      </h3>
+
+      <p>
+        Providing a platform for coordination, meetings,
+        programmes and branch activities.
+      </p>
+
+    </div>
+
+
+    <div class="info-card">
+
+      <div class="info-icon">
+        📢
+      </div>
+
+      <h3>
+        Communication
+      </h3>
+
+      <p>
+        Sharing official updates, news, events and other
+        information with visitors and participants.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- GREEN SECTION -->
+  <section class="green-section">
+
+    <h2>
+      Ibaji Local Government Area
+    </h2>
+
+    <p>
+      The City Boy Movement – Ibaji Branch website is designed
+      to provide an accessible online platform for information,
+      communication and engagement relating to the branch and
+      its officially announced activities.
+    </p>
+
+  </section>
+
+
+  <!-- QUICK LINKS -->
+  <div class="quick-links">
+
+    <h2>
+      Explore Our Website
+    </h2>
+
+    <a href="leadership.html">Leadership</a>
+
+    <a href="activities.html">Activities</a>
+
+    <a href="news.html">News</a>
+
+    <a href="events.html">Events</a>
+
+    <a href="gallery.html">Gallery</a>
+
+    <a href="membership.html">Membership</a>
+
+    <a href="faq.html">FAQ</a>
+
+    <a href="contact.html">Contact</a>
+
+  </div>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <h3>
+    CITY BOY MOVEMENT – IBAJI BRANCH
+  </h3>
+
+  <p>
+    Ibaji Local Government Area, Kogi State, Nigeria
+  </p>
+
+  <p>
+    Grassroots Organization • Community Engagement • Civic Participation
+  </p>
+
+  <div class="footer-links">
+
+    <a href="index.html">Home</a>
+
+    <a href="membership.html">Membership</a>
+
+    <a href="faq.html">FAQ</a>
+
+    <a href="privacy.html">Privacy</a>
+
+    <a href="terms.html">Terms</a>
+
+    <a href="contact.html">Contact</a>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 City Boy Movement – Ibaji Branch. All Rights Reserved.
+  </div>
+
+</footer>
+
+</body>
+</html>
